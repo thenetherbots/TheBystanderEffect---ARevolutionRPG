@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bystander</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #1a1b44;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+</head>
+<body>
+  <div id="game-container"></div>
+  <script src="./src/scenes/HouseScene.js"></script>
+  <script src="./src/scenes/OutsideScene.js"></script>
+  <script src="./src/scenes/HarborScene.js"></script>
+  <script src="./src/scenes/PrintShopScene.js"></script>
+  <script src="./src/scenes/TownSquareScene.js"></script>
+  <script src="./src/scenes/ModernCityScene.js"></script>
+  <script src="./src/scenes/DistrictMapScene.js"></script>
+  <script src="./src/scenes/GovernorBossScene.js"></script>
+  <script src="./src/scenes/EndingScene.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
